@@ -1,0 +1,92 @@
+
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+   text-decoration: none;
+}
+    section{
+        padding: 0 13%;
+        padding-top: 6rem;
+    }
+    header{
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 .5rem 1rem rgb(0,0,0,.1);
+    padding: 1.5rem 10%;
+    align-items:center ;
+    justify-content:space-between;
+    z-index: 1000;
+}
+header .group{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:  #ED176F;
+}
+header .navbar a{
+    font-size: 1.2rem;
+    margin-left: 2rem;
+    color: #ED176F;
+}
+header .navbar a:hover{
+    background-color: #0000FF;
+    color: white;
+    border-radius: 2rem;
+    padding: .2rem 1rem;
+}
+.home{
+    padding-top: 6rem;
+}
+.projectinformation{
+    padding-top: 6rem;
+}
+
+.theory{
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+.projectinformation{
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+    h1{
+        text-align: center;
+        color: #ED176F;
+        font-size: 2rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    h2{ text-align: center;
+        font-size: 1.8rem;
+        color: #000fff;
+        padding: 1rem 0;
+    }
+    h3{  color:#333;
+        font-size: 1.6rem;
+    }
+    h4{
+        color: #444;
+        font-size: 1.6rem;
+    }
+    table{
+        border-collapse: collapse;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    td,th{
+    padding: 8px;
+    border: 2px solid #333;
+    text-align: left;
+    }
+    p{
+        font-size: 1.5rem;
+    }
+    img{
+        padding: auto 1rem;
+    }

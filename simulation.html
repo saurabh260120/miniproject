@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="group">CS203 - GROUP 14</a>
+    
+        <nav class="navbar">
+        <a href="abcd.html">Home</a>
+        <a href="projectinformation.html">Project information</a>
+        <a href="theory.html">Theory</a>
+        <a href="simulation.html">Simulation</a>
+        <a href="conclusion.html">Conclusion</a>
+        </nav>
+    </header>
+
+    <section class="simulation" id="simulation">
+
+        <h2>SIMULATION PROCEDURE</h2>
+        <br> 
+        <img src="https://drive.google.com/uc?id=1CSrhXX2o39jM69KPkpfYqsu1sUmR3nwn" alt="">
+        <h2>BOOLEAN EXPRESSION</h2>
+
+        <h4>Diff= A ⊕ B ⊕ Bin</h4>
+        <h4>Bout= A'Bin + A'Bin +B Bin </h4>
+        <br>
+        <p>We have written the code for the full subtracter. We will detect the fault in the circuit at different location based on the input value and output value we get from the simulator for different set of input value. </p>
+        <p>We have assumed that at a time only one stuck at fault is present in the circuit.</p>
+        <br>
+        <h4>Stuck at Input A</h4>
+        <p>To detect the stuck at 1 at A , we will the input as a=0 b=0 bin=0, if the output is diff=0 and bout=0 then there is no fault at any port. but if the output is diff=1 and bout=0. then the a has at stuck at 1 fault.</p>
+        <br>
+        <h4>Stuck at output Diff</h4>
+        <p>If the value of diff is one for all 8 possible input cases then there is stuck at 1 fault at the diff.</p>
+        <br>
+        <h4>Stuck at output Bout</h4>
+        <p>If the value of Bout is one for all 8 possible input cases then there is stuck at 1 fault at the Bout or one or both of the wire 2 and wire 3 are at stuck at 1 fault.</p>
+        
+        <br>
+        <h4>Stuck at Input B</h4>
+        <p>To find the stuck at 1 fault at input B we will observe the value wire "w1". The wire w1 is the output of the A xor B . for A=0, B= 0, if the value of w1 is 0 then there is no fault in input B. If the value becomes 1 then either there may be stuck at fault A or B. we will find out if there is stuck at 1 fault in 1. if there is no stuck at 1 fault at 1 then we can say B has stuck at 1</p>
+        <br>
+        <h4>Stuck at Input Bin</h4>
+        <p>
+        The Bin is directly connected to the and gate, if for all values of 0 input to bin if we get result of input 1 then we can say that the Bin is stuck at 1.
+        </p>
+        <br>
+        <h4>Stuck at 1 at wire 1</h4>
+        <p>
+          if irrespective of all the values of A and B the value at wire 1 is 1. then we can say that wire 1 which is xor of a and B is stuck at 1 fault.  
+        </p>
+        <br>
+        <h4>Stuck at 1 at wire 2</h4>
+        <p>
+          if the bout is 1 always, then either wire 2 or wire 3 are at stuck at 1 fault because the one input in or gate is always 1. 
+        </p>
+        <br>
+        <h4>Stuck at 1 at wire 3</h4>
+        <p>
+          if the bout is 1 always, then either wire 2 or wire 3 are at stuck at 1 fault because the one input in or gate is always 1. 
+        </p>
+        <br>
+        <h1>TRUTH TABLE</h1>
+            <!-- https://drive.google.com/file/d/1u2a2ULcidTkDWSTmWfPJHJWeXJBq-ei5/view?usp=sharing -->
+        <img src="https://docs.google.com/uc?id=1u2a2ULcidTkDWSTmWfPJHJWeXJBq-ei5" width="1000" height="440" alt="truth table">
+        </section>
+        
+        
+</body>
+</html>

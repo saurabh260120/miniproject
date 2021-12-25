@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="group">CS203 - GROUP 14</a>
+    
+        <nav class="navbar">
+        <a href="abcd.html">Home</a>
+        <a href="projectinformation.html">Project information</a>
+        <a href="theory.html">Theory</a>
+        <a href="simulation.html">Simulation</a>
+        <a href="conclusion.html">Conclusion</a>
+        </nav>
+    </header>
+
+    <section class="theory" id="theory" >
+        <h2>THEORY</h2>
+        <h2>THEORY</h2>
+         <p>
+        In the given problem statement we are asked to detect the stuck at 1 fault in the  Full-Subtractor circuit. 
+         </p>
+         <p>The stuck at Fault is a fault in which the logical value at a given place will stuck at one logic. In stack at 1 fault the logical value will be 1 at that point independent of the inputs to the circuit.In stack at 0 fault the logical value will be 0 at that point independent of the inputs to the circuit. </p>
+         <p>These stuck at fault can be anywhere in the circuit, it could be at the input lines, it could be at output lines or it could be the output of any gate in bertween the circuit. </p>
+         <p>In our project we have full subtractor circuit. In full subtractor circuit we have three input lines and two otput lines. To impliment the full subtractor circuit we will need two xor gate , one or gate , two not gate and two and gate.</p>
+         <p>The possible fault site in the full subtractor circuit are: at the three input lines, at the two output lines, and the three connection in between the circuit Diagram.</p>
+        </div>
+      
+    
+        <h2>Truth Table Of Full Subtractor Circuit</h2>
+        <div class="fullsubtruthtable">
+            <table>
+            <td>A</td>
+            <td>B</td>
+            <td>Bin</td>
+            <td >Diff</td>
+            <td>Bout</td>
+            </tr>
+            <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            </tr>
+            <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            </tr>
+            <tr>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+            </tr>
+            <tr>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+            </tr>
+            <tr>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            </tr>
+            <tr>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            </tr>
+            <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            </tr>
+            <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            </tr>
+        </table>
+        </div>
+
+        <img src="https://drive.google.com/uc?id=1CSrhXX2o39jM69KPkpfYqsu1sUmR3nwn" alt="">
+         <h2>BOOLEAN EXPRESSION</h2>
+
+         <h4>Diff= A ⊕ B ⊕ Bin</h4>
+         <h4>Bout= A'Bin + A'Bin +B Bin </h4>
+    </section>
+    
+</body>
+</html>

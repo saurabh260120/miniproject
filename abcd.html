@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DDS-miniproject</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- <style>
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+   text-decoration: none;
+}
+    section{
+        padding: 0 13%;
+    }
+    header{
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 .5rem 1rem rgb(0,0,0,.1);
+    padding: 1.5rem 10%;
+    align-items:center ;
+    justify-content:space-between;
+    z-index: 1000;
+}
+header .group{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:  #ED176F;
+}
+header .navbar a{
+    font-size: 1.2rem;
+    margin-left: 2rem;
+    color: #ED176F;
+}
+header .navbar a:hover{
+    background-color: #0000FF;
+    color: white;
+    border-radius: 2rem;
+    padding: .2rem 1rem;
+}
+.home{
+    padding-top: 6rem;
+}
+.theory{
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+.projectinformation{
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+    h1{
+        text-align: center;
+        color: #ED176F;
+        font-size: 2rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    h2{ text-align: center;
+        font-size: 1.8rem;
+        color: #000fff;
+        padding: 1rem 0;
+    }
+    h3{  color:#333;
+        font-size: 1.6rem;
+    }
+    h4{
+        color: #444;
+        font-size: 1.6rem;
+    }
+    table{
+        border-collapse: collapse;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    td,th{
+    padding: 8px;
+    border: 2px solid #333;
+    text-align: left;
+    }
+    p{
+        font-size: 1.5rem;
+    }
+    img{
+        padding: auto 1rem;
+    }
+    
+    </style> -->
+</head>
+<body>
+
+    <header>
+        <a href="#" class="group">CS203 - GROUP 14</a>
+    
+        <nav class="navbar">
+        <a href="abcd.html">Home</a>
+        <a href="projectinformation.html">Project information</a>
+        <a href="theory.html">Theory</a>
+        <a href="simulation.html">Simulation</a>
+        <a href="conclusion.html">Conclusion</a>
+        </nav>
+    </header>
+   <section class="home" id="home">
+    <h1>DESIGN OF DIGITAL CIRCUIT- MINI PROJECT</h1>
+    <h2>COURSE INSTRUCTOR  : Dr. B. R. Bhowmik</h2>
+  
+    <h2>Members information</h2>
+    <table>
+        <tr>
+            <th>NAME</th>
+            <th>ROLL NUMBER</th>
+        </tr>
+        <tr>
+            <td>Saurabh Kumar Maurya</td>
+            <td>201CS155</td>
+        </tr>
+        <tr>
+            <td>Ravin Parmar</td>
+            <td>201CS246</td>
+        </tr>
+        <tr>
+            <td>Ayush Sehgal</td>
+            <td>201CS112</td>
+        </tr>
+        <tr>
+            <td>Bablu Kisku</td>
+            <td>201CS113</td>
+        </tr>
+        <tr>
+            <td>Sachin Kumar</td>
+            <td>201CS250</td>
+        </tr>
+    </table>
+</section>
+
+
+<!-- <section class="projectinformation" id="projectinformation" >
+    <h2>Project Information</h2>
+    <h3>Project Number : 14</h3>
+    <h3>Project Title: Detection of SA1 faults on the logic circuit that 
+        represents a Full-Subtractor.</h3>
+    
+    <h3>AIM: Aim of the project is to detect the SA1 fault in the Given Circuit</h3>
+     <div>
+</section> -->
+     
+
+    <!-- <section class="theory" id="theory" >
+    <h2>THEORY</h2>
+     <p>
+    In the given problem statement we are asked to detect the stuck at 1 fault in the  Full-Subtractor circuit. 
+     </p>
+     <p>The stuck at Fault is a fault in which the logical value at a given place will stuck at one logic. In stack at 1 fault the logical value will be 1 at that point independent of the inputs to the circuit.In stack at 0 fault the logical value will be 0 at that point independent of the inputs to the circuit. </p>
+     <p>These stuck at fault can be anywhere in the circuit, it could be at the input lines, it could be at output lines or it could be the output of any gate in bertween the circuit. </p>
+     <p>In our project we have full subtractor circuit. In full subtractor circuit we have three input lines and two otput lines. To impliment the full subtractor circuit we will need two xor gate , one or gate , two not gate and two and gate.</p>
+     <p>The possible fault site in the full subtractor circuit are: at the three input lines, at the two output lines, and the three connection in between the circuit Diagram.</p>
+    </div>
+  
+
+    <h2>Truth Table Of Full Subtractor Circuit</h2>
+    <div class="fullsubtruthtable">
+        <table>
+        <td>A</td>
+        <td>B</td>
+        <td>Bin</td>
+        <td >Diff</td>
+        <td>Bout</td>
+        </tr>
+        <tr>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        </tr>
+        <tr>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        </tr>
+        <tr>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>1</td>
+        </tr>
+        <tr>
+        <td>0</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        </tr>
+        <tr>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        </tr>
+        <tr>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        </tr>
+        <tr>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        </tr>
+        <tr>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        </tr>
+    </table>
+    </div>
+
+</section> -->
+
+
+<!-- <section class="simulation" id="simulation">
+
+<h2>SIMULATION PROCEDURE</h2>
+<br> 
+<img src="https://drive.google.com/uc?id=1CSrhXX2o39jM69KPkpfYqsu1sUmR3nwn" alt="">
+
+<p>We have written the code for the full subtracter. We will detect the fault in the circuit at different location based on the input value and output value we get from the simulator for different set of input value. </p>
+<p>We have assumed that at a time only one stuck at fault is present in the circuit.</p>
+
+<h4>Stuck at Input A</h4>
+<p>To detect the stuck at 1 at A , we will the input as a=0 b=0 bin=0, if the output is diff=0 and bout=0 then there is no fault at any port. but if the output is diff=1 and bout=0. then the a has at stuck at 1 fault.</p>
+
+<h4>Stuck at output Diff</h4>
+<p>If the value of diff is one for all 8 possible input cases then there is stuck at 1 fault at the diff.</p>
+
+<h4>Stuck at output Bout</h4>
+<p>If the value of Bout is one for all 8 possible input cases then there is stuck at 1 fault at the Bout or one or both of the wire 2 and wire 3 are at stuck at 1 fault.</p>
+
+
+<h4>Stuck at Input B</h4>
+<p>To find the stuck at 1 fault at input B we will observe the value wire "w1". The wire w1 is the output of the A xor B . for A=0, B= 0, if the value of w1 is 0 then there is no fault in input B. If the value becomes 1 then either there may be stuck at fault A or B. we will find out if there is stuck at 1 fault in 1. if there is no stuck at 1 fault at 1 then we can say B has stuck at 1</p>
+
+<h4>Stuck at Input Bin</h4>
+<p>
+The Bin is directly connected to the and gate, if for all values of 0 input to bin if we get result of input 1 then we can say that the Bin is stuck at 1.
+</p>
+
+<h4>Stuck at 1 at wire 1</h4>
+<p>
+  if irrespective of all the values of A and B the value at wire 1 is 1. then we can say that wire 1 which is xor of a and B is stuck at 1 fault.  
+</p>
+
+<h4>Stuck at 1 at wire 2</h4>
+<p>
+  if the bout is 1 always, then either wire 2 or wire 3 are at stuck at 1 fault because the one input in or gate is always 1. 
+</p>
+
+<h4>Stuck at 1 at wire 3</h4>
+<p>
+  if the bout is 1 always, then either wire 2 or wire 3 are at stuck at 1 fault because the one input in or gate is always 1. 
+</p>
+
+<h1>TRUTH TABLE</h1>
+     https://drive.google.com/file/d/1u2a2ULcidTkDWSTmWfPJHJWeXJBq-ei5/view?usp=sharing
+<img src="https://docs.google.com/uc?id=1u2a2ULcidTkDWSTmWfPJHJWeXJBq-ei5" width="1000" height="440" alt="truth table">
+</section>
+
+ 
+
+    <section class="conclusion" id="conclusion">
+        <DIV>
+<h2>CONCLUSION</h2>
+<p>We have written the verilog code for the given circuit. we compiled it and runned it. and we simulated it with different set of test benches. and We detected the stuck at 1 fault at the possible points.</p>
+</DIV>
+</section> -->
+
+
+</body>
+</html>
